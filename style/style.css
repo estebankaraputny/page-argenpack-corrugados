@@ -14,6 +14,8 @@ main{
     --verde-argen:#5B9B60;
     --blanco: #fff;
     --gris-argen:#232323;
+    --gris-claro: #E8EBEC;
+    --verde-oscuro: #376D3B;
 }
 
 .content-nav-car{
@@ -39,7 +41,7 @@ main{
 }
 .cont-links{
     height: 100%;
-    width: 50%;
+    width: 45%;
     margin: auto;
 }
 
@@ -58,7 +60,7 @@ main{
 }
 
 .button-nav {
-    width: 9rem;
+    width: 7rem;
     display: inline-block;
     padding: 12px 5px;
     border: 1px solid var(--gris-argen);
@@ -66,7 +68,7 @@ main{
     transition: all 0.2s ease-in;
     position: relative;
     overflow: hidden;
-    font-size: 19px;
+    font-size: 0.8rem;
     color: var(--blanco);
     background-color: #232323cb;
     z-index: 1;
@@ -131,8 +133,9 @@ main{
 }
 
 .img-argen{
-    width: 50%;
+    width: 10%;
     height: auto;
+    margin: auto;
 }
 
 .sections{
@@ -148,7 +151,7 @@ main{
 .parrafo-qs{
     text-align: start;
     font-size: 1.3rem;
-    width: 50%;
+    width: 70%;
 }
 
 .section-mi-vi{
@@ -173,12 +176,12 @@ main{
 
 .title-mi-vi{
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .parrafo-mi-vi{
     width: 90%;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .ilu-mi-vi{
@@ -223,13 +226,13 @@ main{
 }
 
 .info-de-dsa h3{
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 600;
 }
 
 .parrafo-dsa{
     width: 90%;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-align: center;
 }
 
@@ -391,6 +394,94 @@ main{
     }
 }
 
+/* PAGINA PRODUCTOS  */
+
+.navbar{
+  padding: 0 !important;
+}
+
+.navbar-search{
+  background-color: var(--gris-argen);
+  padding: 1rem;
+}
+
+.nav-buscar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cont-search{
+  width: 40%;
+}
+
+.cont-products{
+  width: 90%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gris-claro) ;
+  box-shadow: 0px 0px 91px -20px rgba(0,0,0,0.75);
+}
+
+.card-pro{
+  background-color: var(--blanco);
+  width: 18rem;
+  height: 23rem;
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 94px -48px rgba(0,0,0,0.75);
+}
+
+.cont-img-card{
+  height: 60%;
+  width: 100%;
+}
+
+.img-card{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #8f8e8e;
+  border-radius: 5px;
+}
+
+.cont-info-card{
+  padding: 1rem 0;
+}
+
+.title-card{
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.price-card{
+  font-size: 1rem;
+  color: var(--gris-argen);
+}
+
+.cont-button-card{
+  display: flex;
+  justify-content: end;
+}
+
+.button-card{
+  background-color: var(--verde-oscuro);
+  padding: 0.5rem;
+  width: 7rem;
+  text-align: center;
+  border-radius: 50px;
+  text-decoration: none;
+  color: var(--blanco);
+}
+
+.button-card:hover{
+  background-color: var(--verde-argen);
+}
 
 
 
@@ -403,6 +494,7 @@ main{
     flex-direction: column;
     padding: 3rem;
 }
+
 .cont-form-contact{
     width: 100%;
     height: 700px;
@@ -418,9 +510,10 @@ main{
     flex-direction: column;
     align-items: center;
     width: 40%;
-    justify-content: start;
+    justify-content: center;
     background-color: #23232323;
     border-radius: 50px 0px 0px 50px;
+    padding: 2rem;
 }
 
 .form-contact {
@@ -437,7 +530,7 @@ main{
   }
   
   .title-contact {
-    font-size: 3rem;
+    font-size: 2.3rem;
     color: var(--verde-argen);
     font-weight: 600;
     letter-spacing: -1px;
@@ -475,7 +568,7 @@ main{
 
   .message{
     color: rgba(88, 87, 87, 0.822);
-    font-size: 20px;
+    font-size: 1rem;
   }
   
   .signin {
@@ -575,4 +668,18 @@ main{
     justify-content: space-evenly;
     text-align: center;
     padding: 2rem;
+    width: 100%;
+}
+
+.cont-maps{
+  padding: 2rem;
+  width: 45%;
+}
+
+.maps{
+  width: 100%;
+}
+
+.title-maps{
+  font-size: 1.3rem;
 }
