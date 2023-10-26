@@ -820,7 +820,7 @@ main{
 }
 
 .button-subircv:hover .button__icon {
-  width: 148px;
+  width: 100%;
   transform: translateX(0);
   border-radius: 15px;
 }
