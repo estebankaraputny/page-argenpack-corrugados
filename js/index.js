@@ -131,7 +131,7 @@ const contentCards = document.querySelector("#contentProducts");
 const renderCards = () => {
     productsBox.map((product) => {
         return ( card += `
-        <div class="card-pro">
+        <div class="card-pro" id="cardProduct">
           <div class="cont-img-card">
             <img src="${product.imgUrl}" alt="Imagen del producto seleccionado y personalizado por el cliente." class="img-card">
           </div>
@@ -152,5 +152,55 @@ const renderCards = () => {
 renderCards();
 
 
+// BUSCADOR DE PRODUCTOS 
+
+const inputSearch = document.getElementById("inputSearch");
+const buttonSearch = document.getElementById("buttonSearch");
+const cardBoxs = document.querySelectorAll("#cardProduct");
 
 
+inputSearch.addEventListener("keyup", (event) =>{
+    
+    console.log(event.target.value.toLowerCase())
+
+    let hiddenCard = [];
+
+    // console.log(cardBoxs.forEach(box => {
+    //     console.log(box)
+    // }));
+    
+    if(event.target.value != " "){
+        cardBoxs.forEach( box =>{
+            
+            box.textContent.toLocaleLowerCase().replace(" ", "-").includes(event.target.value.toLocaleLowerCase().replace(" ", "-"))
+            ? box.classList.remove("hidden")
+            : box.classList.add("hidden")
+
+            if(box.classList.contains("hidden")){
+                hiddenCard.push(box);
+            } 
+        })
+    };
+
+    const messageError = document.getElementById("messageError");
+    let message = ``;
+
+    if(hiddenCard.length === cardBoxs.length){
+        message += `
+        <div class="card__mensajeDeError">
+            <img src="../assent/image/caja-error.jpg" alt="Imagen del espacio" class="img__error">
+            <div class="mensaje__error">
+                <h2>No hay productos que coincidan con tu búsqueda.</h2>
+                <ul>
+                    <li>Revisá la ortografía de la palabra.</li>
+                    <li>Utilizá palabras más genéricas o menos palabras.</li>
+                    <li>Prueba navegar por nuestro menú de categorías.</li>
+                    <li>Vuelve a la página principal para seguir buscando.</li>
+                </ul>
+            </div>
+        </div> `
+    }
+
+    messageError.innerHTML = message;
+
+}); 
