@@ -1396,85 +1396,158 @@ main{
   color: var(--gris-argen);
 }
 
+.cont-logo-menu{
+  display: none;
+}
+
 /* COMIENZA DISEÑO RESPONSIVE */
 
-/* 1- PANTALLAS DE CELULARES  */
+/* 1- PANTALLAS DE TABLES  */
+
+@media (max-width: 750px){
+
+
+
+}
+
+
+/* 2- PANTALLAS DE CELULARES  */
 
 @media (max-width: 450px){
-    .content-nav-car{
-      position: static;
-      height: 4rem;
-    }
+    
 
-   .cont-logo{
-    display: none;
-   }
+  .cont-title-contact{
+    padding: 0;
+    margin: 1rem 0;
+  }
 
-   .menu-hamburguesa{
+  .title-contact{
+    font-size: 1.5rem;
+  }
+
+  .cont-card-presentacion{
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .card-presentacion{
+    height: 300px;
+    margin-bottom: 1rem;
+  }
+
+  .img-pre{
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .content-div-susten{
+    height: auto;
+    padding: .8rem;
+  }
+
+
+  .cont-susten{
     display: flex;
-    position: absolute;
-    color: var(--gris-argen);
-    z-index: 10;
-    top: 0.2rem;
-    right: 3rem;
-
-  }
-  
-  .bi-list{
-    position: relative;
-    font-size: 2rem;
-   }
-
-  .cont-links{
-    height: 100vh;
-    width: 100%;
-    z-index: 3;
-  }
-  
-  .list-links{
-    background-color: var(--verde-argen);
-    position: absolute;
-    width: 100%;
-    height: 100%;
     flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    padding-top: 5rem;
-    padding-left: 0;
-    transform: translateY(-100%);
-    transition: transform .5s;
+    padding: .5rem;
   }
-
-  .menu-active{
-    transform: translate(0);
-  }
-
-  .list-links li{
+  .cont-susten div {
     width: 100%;
-    margin: 1.5rem 0;
+    height: auto;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    font-size: .9rem;
   }
 
-  .button-nav{
-    width: 100%;
-    background-color: transparent;
-    border: 0;
-    color: var(--gris-argen);
-    font-size: 1.1rem;
-    font-weight: bold;
+  .cont-susten div img{
+    width: 75%;
+    margin: auto;
+    padding: 1rem;
+  }
+
+  .content-mas-info{
+    height: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-rows: 0;
+    grid-gap: 1rem;
+  }
+
+  .cont-card-minfo{
+    height: 25rem;
+    margin-bottom: 2rem;
+  }
+
+  .parrafo-minfo{
+    font-size: .8rem;
+    padding: 1rem;
+  }
+
+  .content-div-perfil{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cont-perfil{
+    margin-bottom: 2rem;
+  }
+
+  .content-impact{
     padding: 0;
   }
 
-  .cont-logo-menu{
+  .cont-info-impact{
+    flex-direction: column;
+    padding: 0;
+    overflow: scroll;
+  }
+
+  .cont-tandp{
     width: 100%;
-    margin-top: 20rem;
+    padding: 1rem;
     text-align: center;
   }
 
-  .cont-logo-menu img{
-    width: 80%;
+  .subtitle-impact{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
 
-  .cont-prod-muestra, .cont-boton-product{
-    display: none;
+  .img-impact{
+
+    height: 250px;
+    padding: 0;
   }
+
+  .content-footer{
+    flex-direction: column-reverse;
+  }
+
+  .cont-copy-info{
+    width: 100%;
+    padding: .8rem;
+    font-size: .8rem;
+  }
+
+  .cont-copy-info p{
+    margin-bottom: 1rem;
+  }
+
+  .cont-redes{
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .redes{
+    width: 100%;
+    padding: .8rem;
+    flex-wrap: wrap;
+  }
+  .redes div{
+    width: 50%;
+    font-size: .8rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
 }
