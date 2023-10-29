@@ -28,7 +28,7 @@ const productsBox = [
     },
     {
         titleBox: "Caja contenedor de residuos industriales",
-        descriptionBox: "",
+        descriptionBox: "Medidas: Altura: 30 cm, Ancho: 50 cm, Área: 1500 cm2 Uso: Uso para contenidos variados, el cliente lo usará para pack de regalo para sus empleados. Material: Usamos un material resistente que permite carga máxima de 3 kg. Para su tamaño es un recipiente ideal y práctico, no se me ocurre más nada porque no trabajo en Argenpack.",
         clientBox: "Mirgor",
         category: "Envases especiales",
         industria:"Electrónica",
@@ -37,7 +37,7 @@ const productsBox = [
     },
     {
         titleBox: "Caja Smart Tv 50'",
-        descriptionBox: "",
+        descriptionBox: "Medidas: Altura: 30 cm, Ancho: 50 cm, Área: 1500 cm2 Uso: Uso para contenidos variados, el cliente lo usará para pack de regalo para sus empleados. Material: Usamos un material resistente que permite carga máxima de 3 kg. Para su tamaño es un recipiente ideal y práctico, no se me ocurre más nada porque no trabajo en Argenpack.",
         clientBox: "Samsung",
         category: "Envases industriales",
         industria:"Electrónica",
@@ -55,7 +55,7 @@ const productsBox = [
     },
     {
         titleBox: "Cajita de regalo",
-        descriptionBox: "",
+        descriptionBox: "Medidas: Altura: 30 cm, Ancho: 50 cm, Área: 1500 cm2 Uso: Uso para contenidos variados, el cliente lo usará para pack de regalo para sus empleados. Material: Usamos un material resistente que permite carga máxima de 3 kg. Para su tamaño es un recipiente ideal y práctico, no se me ocurre más nada porque no trabajo en Argenpack.",
         clientBox: "Disco",
         category: "Alta grafica",
         industria:"Hipermercado",
@@ -64,7 +64,7 @@ const productsBox = [
     },
     {
         titleBox: "Caja Smart Tv 43'",
-        descriptionBox: "",
+        descriptionBox: "Medidas: Altura: 30 cm, Ancho: 50 cm, Área: 1500 cm2 Uso: Uso para contenidos variados, el cliente lo usará para pack de regalo para sus empleados. Material: Usamos un material resistente que permite carga máxima de 3 kg. Para su tamaño es un recipiente ideal y práctico, no se me ocurre más nada porque no trabajo en Argenpack.",
         clientBox: "LG",
         category: "Envases industriales",
         industria:"Electrónica",
@@ -137,7 +137,7 @@ const renderDetails = () => {
                 <a href="./product.html" class="button-volver"><i class="bi bi-arrow-left-circle"></i></a>
             </div>
             <div class="card-details">
-                <div class="cont-img-detials">
+                <div class="cont-img-detials" id="img-container">
                     <img class="img-details" src="${productsBox[i].imgUrl}" alt="Imagen del producto">
                 </div>
                 <div class="cont-info-details">
@@ -166,3 +166,24 @@ const renderDetails = () => {
     }
 }
 renderDetails();
+
+
+// // ZOOM IMG 
+
+// let options = {
+
+//     fiilContainer:true,
+//     // width: 300,
+//     // heigth: 300,
+//     zoomWidth: 200,
+//     offSet: {
+//         vertical: 20,
+//         horizontal: 10
+//     },
+//     // zoomStyle: 'background-color: white;',
+//     // zoomPosition (string) - position of zoomed image. It can be: top, left, bottom, original or the default right.
+//     // zoomPosition:"top: 200; rigth: 500;",
+//     scale: 3
+// }
+
+// new ImageZoom(document.getElementById("img-container"), options);

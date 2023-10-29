@@ -1052,6 +1052,8 @@ main{
 }
 
 /* PAGINA DE CONTACTO */
+
+
 .cont-title-contact{
     display: flex;
     justify-content: center;
@@ -1077,7 +1079,7 @@ main{
     align-items: start;
     width: 40%;
     justify-content: center;
-    background-color: #23232323;
+    background-color: #3aa85623;
     border-radius: 50px 0px 0px 50px;
     padding: 3rem;
 }
@@ -1308,9 +1310,14 @@ main{
   padding: 2rem;
 }
 
+.cont-img-detials:hover{
+  cursor: zoom-in;
+}
+
 .img-details{
+  background-color: var(--blanco);
   width: 100%;
-  height: auto;
+  height: 80%;
   object-fit: cover;
   object-position: center;
 }
@@ -1372,4 +1379,102 @@ main{
   display: inline-block;
   text-decoration: none;
   text-align: center;
+}
+
+/* MENU HAMBURGUESA  */
+
+.menu-hamburguesa{
+  width: 60px;
+  cursor: pointer;
+  padding: .7rem;
+  display: none;
+}
+
+.bi-list{
+  width: 100%;
+  height: 100%;
+  color: var(--gris-argen);
+}
+
+/* COMIENZA DISEÑO RESPONSIVE */
+
+/* 1- PANTALLAS DE CELULARES  */
+
+@media (max-width: 450px){
+    .content-nav-car{
+      position: static;
+      height: 4rem;
+    }
+
+   .cont-logo{
+    display: none;
+   }
+
+   .menu-hamburguesa{
+    display: flex;
+    position: absolute;
+    color: var(--gris-argen);
+    z-index: 10;
+    top: 0.2rem;
+    right: 3rem;
+
+  }
+  
+  .bi-list{
+    position: relative;
+    font-size: 2rem;
+   }
+
+  .cont-links{
+    height: 100vh;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .list-links{
+    background-color: var(--verde-argen);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 5rem;
+    padding-left: 0;
+    transform: translateY(-100%);
+    transition: transform .5s;
+  }
+
+  .menu-active{
+    transform: translate(0);
+  }
+
+  .list-links li{
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+
+  .button-nav{
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    color: var(--gris-argen);
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0;
+  }
+
+  .cont-logo-menu{
+    width: 100%;
+    margin-top: 20rem;
+    text-align: center;
+  }
+
+  .cont-logo-menu img{
+    width: 80%;
+  }
+
+  .cont-prod-muestra, .cont-boton-product{
+    display: none;
+  }
 }
