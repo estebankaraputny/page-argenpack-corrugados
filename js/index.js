@@ -1,7 +1,7 @@
 const productsBox = [
     {
         titleBox: "Cajita de regalo",
-        descriptionBox: "",
+        descriptionBox: "Medidas: Altura: 30cm, Ancho: 50cm, Área: 1500cm2 Uso: Uso para contenidos variados, el cliente lo usará para pack de regalo para sus empleados. Material: Usamos un material resistente que permite carga máxima de 3kg. Para su tamaño es un resipiente ideal y práctico, no se me ocurre más nada porque no trabajo en Argenpack.",
         clientBox: "Macro",
         category: "Alta grafica",
         industria:"Financiera",
@@ -10,7 +10,7 @@ const productsBox = [
     },
     {
         titleBox: "Caja contenedor de autopartes",
-        descriptionBox: "",
+        descriptionBox: "Medidas: Altura: 30cm, Ancho: 50cm, Área: 1500cm2 Uso: Uso para contenidos variados, el cliente lo usará para pack de regalo para sus empleados. Material: Usamos un material resistente que permite carga máxima de 3kg. Para su tamaño es un resipiente ideal y práctico, no se me ocurre más nada porque no trabajo en Argenpack.",
         clientBox: "Toyota",
         category: "Grandes contenedores",
         industria:"Automotriz",
@@ -19,7 +19,7 @@ const productsBox = [
     },
     {
         titleBox: "Caja contenedor de liquidos industriales",
-        descriptionBox: "",
+        descriptionBox: "Medidas: Altura: 30cm, Ancho: 50cm, Área: 1500cm2 Uso: Uso para contenidos variados, el cliente lo usará para pack de regalo para sus empleados. Material: Usamos un material resistente que permite carga máxima de 3kg. Para su tamaño es un resipiente ideal y práctico, no se me ocurre más nada porque no trabajo en Argenpack.",
         clientBox: "Mirgor",
         category: "Envases especiales",
         industria:"Electrónica",
@@ -46,7 +46,7 @@ const productsBox = [
     },
     {
         titleBox: "Caja router Directv",
-        descriptionBox: "",
+        descriptionBox: "Medidas: Altura: 30cm, Ancho: 50cm, Área: 1500cm2 Uso: Uso para contenidos variados, el cliente lo usará para pack de regalo para sus empleados. Material: Usamos un material resistente que permite carga máxima de 3kg. Para su tamaño es un resipiente ideal y práctico, no se me ocurre más nada porque no trabajo en Argenpack.",
         clientBox: "Directv",
         category: "Envases industriales",
         industria:"Telecomunicaciones",
@@ -73,7 +73,7 @@ const productsBox = [
     },
     {
         titleBox: "Caja autopartes",
-        descriptionBox: "",
+        descriptionBox: "Medidas: Altura: 30cm, Ancho: 50cm, Área: 1500cm2 Uso: Uso para contenidos variados, el cliente lo usará para pack de regalo para sus empleados. Material: Usamos un material resistente que permite carga máxima de 3kg. Para su tamaño es un resipiente ideal y práctico, no se me ocurre más nada porque no trabajo en Argenpack.",
         clientBox: "Iveco",
         category: "Envases industriales",
         industria:"Automotriz",
@@ -140,8 +140,9 @@ const renderCards = () => {
             <p class="price-card">Cliente: ${product.clientBox}</p>
             </div>
             <div class="cont-button-card">
-              <a href="#" class="button-card">Ver más</a>
+              <a href="./details.html" class="button-card" id="buttonDetails">Ver más</a>
             </div>
+            <span class="idOfBox" id="${product.idBox}"></span>
         </div>
         `
         );
@@ -204,3 +205,19 @@ inputSearch.addEventListener("keyup", (event) =>{
     messageError.innerHTML = message;
 
 }); 
+
+
+
+
+// ENVIAR IDBOX PARA RENDERIZAR 
+
+const buttonVerMas = document.querySelectorAll("#buttonDetails");
+let idOfBox = document.querySelectorAll(".idOfBox");
+
+for(let i = 0; i < idOfBox.length; i++){
+    buttonVerMas[i].addEventListener( "click", () => {
+        console.log(idOfBox[i].id);
+        localStorage.setItem("idOfBox", idOfBox[i].id);
+    });
+}
+
