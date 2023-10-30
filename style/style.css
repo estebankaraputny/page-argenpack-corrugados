@@ -923,17 +923,11 @@ main{
 
 /* PAGINA PRODUCTOS  */
 
-.navbar{
-  padding: 0 !important;
-}
 
-.navbar-search{
+.nav-search-product{
+  width: 100%;
   background-color: var(--gris-argen);
   padding: 1rem;
-}
-
-.nav-buscar{
-  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -1550,7 +1544,7 @@ main{
   }
 
   .parrafo-minfo{
-    font-size: .8rem;
+    font-size: 1.1rem;
     padding: 1rem;
   }
 
@@ -1629,7 +1623,108 @@ main{
 
 /* PÁGINA NOSOTROS RESPONSIVE  */
 
+.parrafo-qs{
+  width: 60%;
+  font-size: 1.1rem;
+}
 
+.img-argen{
+  width: 20%;
+}
+
+.section-mi-vi{
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.cont-mi-vi{
+  width: 100%;
+}
+
+.ilu-mi-vi{
+  width: 40%;
+}
+
+.info-mi-vi{
+  width: 60%;
+  padding: 2rem;
+}
+
+.cont-card-testi{
+  align-items: center;
+  justify-content: center;
+}
+
+.card-testimonio{
+  margin:1rem;
+}
+
+.testi{
+  font-size: 1.1rem;
+  overflow: scroll;
+}
+
+.content-form-unete{
+  height: auto;
+}
+
+.cont-form-unete{
+  flex-direction: column;
+  padding: 0;
+}
+
+.cont-form-unete div{
+  width: 100%;
+}
+
+.section-one-unete div{
+  margin-bottom: 1rem;
+}
+
+.form-contact{
+  width: 100%;
+  border-radius: 0;
+  margin: 2rem 0;
+}
+
+.button-subircv .button__icon{
+  width: 73%;
+}
+
+  /* PAGINA PRODUCTO RESPONSIVE  */
+
+.cont-search{
+  width: 60%; 
+}
+
+/* PAGINA CONTACTO RESPONSIVE  */
+
+.cont-form-contact{
+  flex-direction: column;
+  height: auto;
+}
+
+.cont-form-contact div{
+  width: 100%;
+  border-radius: 0;
+}
+.form-contact{
+  margin: 0;
+}
+
+.cont-ubi{
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.cont-maps{
+  width: 100%;
+}
+
+.maps{
+  margin-top: 1rem;
+  border-radius: 15px;
+}
 
 }
 
