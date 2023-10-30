@@ -122,13 +122,15 @@ window.onload = function(){
 
 
 // MENU HAMBURGUESA FUNCION
+if(screen.width < 850){
+    const buttonMenu = document.querySelector(".menu-hamburguesa");
+    const listaMenu = document.querySelector(".cont-links");
+    
+    buttonMenu.addEventListener("click", () =>{
+        listaMenu.classList.toggle("menu-active");
+    });
+}
 
-const buttonMenu = document.querySelector(".menu-hamburguesa");
-const listaMenu = document.querySelector(".list-links");
-
-buttonMenu.addEventListener("click", () =>{
-    listaMenu.classList.toggle("menu-active");
-})
 
 
 
