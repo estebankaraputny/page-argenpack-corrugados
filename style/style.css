@@ -1404,7 +1404,7 @@ main{
 
 /* 1- PANTALLAS DE TABLES  */
 
-@media (max-width: 850px){
+@media (max-width: 850px ) and (min-width: 0px){
 
   /* MENU HAMBURGUESA  */
 
@@ -1732,5 +1732,126 @@ main{
 /* 2- PANTALLAS DE CELULARES  */
 
 @media (max-width: 450px){
+
+/* PAGINA DE INICIO  */
+
+  .cont-links{
+    height: 100vh;
+  }
+
+  .menu-hamburguesa{
+    top: .3rem;
+    right: .3rem;
+    padding: .3rem;
+  }
+  .cont-links{
+    padding: 0;
+  }
   
+  .list-links{
+    padding: 0;
+  justify-content: space-evenly;
+
+  }
+
+  .button-nav{
+    padding: 1rem;
+    font-size: .8rem;
+  }
+
+  .cont-logo-menu{
+    width: 80%;
+  }
+
+  .cont-logo-menu img{
+    width: 100%;
+  }
+
+  .cont-prod-muestra, .cont-boton-product{
+    display: none;
+  }
+
+  .title-contact{
+    font-size: 1.2rem;
+  }
+
+  .content-div-susten{
+    height:37rem;
+    padding: .3rem;
+  }
+
+  .parrafo-susten{
+    font-size: .8rem;
+    margin: 0;
+  }
+  
+    .cont-susten div img{
+      width: 80%;
+      padding: 0;
+    }
+
+  .content-mas-info{
+    height: auto;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .cont-card-minfo{
+    margin-bottom: 1rem;
+    height: auto;
+  }
+
+  .cont-img-minfo-one, .cont-img-minfo-two, .cont-img-minfo-three{
+    height: 10rem;
+  }
+
+  /* .cont-text-minfo{
+    height:auto;
+    overflow: scroll;
+  } */
+  
+  .parrafo-minfo{
+    font-size: .8rem;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow: scroll;
+  }
+
+  .cont-perfil{
+    margin: 1rem;
+  }
+
+  .img-perfiles{
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .title-impact{
+    font-size: 1.5rem;
+  }
+
+  .subtitle-impact{
+    font-size: 1rem;
+  }
+
+  .parrafo-impact{
+    font-size: .8rem;
+  }
+
+  .title-slider-inf{
+    padding: .5rem;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+  }
+  .slide-emp{
+    width: 200px;
+  }
+
+  .content-footer{
+    padding: .5rem;
+  }
+
 }
