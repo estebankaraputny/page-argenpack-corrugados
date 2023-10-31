@@ -133,7 +133,7 @@ if(screen.width < 850){
 
 
 
-if( window.location.pathname === "/pages/product"){
+if( window.location.pathname === "/pages/product" || window.location.pathname === "/pages/product.html"){
 
     
 
@@ -236,7 +236,9 @@ buttonVerMas[i].addEventListener( "click", () => {
 });
 }
 
-} else if (window.location.pathname === "/pages/details"){
+} 
+
+if (window.location.pathname === "/pages/details" || window.location.pathname === "/pages/details.html"){
     
 
 let idBoxProduct = localStorage.getItem("idOfBox");
