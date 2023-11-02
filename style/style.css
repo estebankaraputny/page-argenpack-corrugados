@@ -1405,7 +1405,7 @@ main{
 
 /* 1- PANTALLAS DE TABLES  */
 
-@media (max-width: 850px ) and (min-width: 0px){
+@media (max-width: 900px ) and (min-width: 0px){
 
   /* MENU HAMBURGUESA  */
 
@@ -1987,7 +1987,7 @@ main{
     font-size: .7rem;
   }
   .form-control::placeholder{
-    font-size: .5rem;
+    font-size: .7rem;
   }
 
   .dropdown-toggle{
@@ -2021,10 +2021,123 @@ main{
     margin-bottom: .3rem;
   }
 
+  .cont-button-card{
+    justify-content: center;
+  }
+
   .button-card{
     width: 90%;
     padding: .2rem;
     font-size: .8rem;
     justify-content: center;
   }
+
+  /* Mensaje de error */
+  .card__mensajeDeError{
+    flex-direction: column;
+    padding: .5rem;
+  }
+
+  .img__error, .mensaje__error{
+    width: 100%;
+  }
+
+
+  .mensaje__error h2{
+    width: 100%;
+    font-size: 1.1rem;
+    padding: .5rem;
+    text-align: center;
+  }
+
+  .mensaje__error ul{
+    font-size: .8rem;
+  }
+
+/* PAGINA DE DETALLES  */
+
+  .main-details{
+    padding: 5rem 0;
+    background-color: var(--blanco);
+  }
+
+  .button-volver{
+    padding-left: 1rem;
+  }
+
+  .card-details{
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 0;
+  }
+
+  .cont-img-detials{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 1rem;
+  }
+
+  .cont-info-details{
+    width: 100%;
+    height: auto;
+  }
+
+  .ruta-details{
+    font-size: .8rem;
+  }
+
+  .title-details{
+    font-size: 1.3rem;
+    margin: .5rem 0;
+  }
+
+  .subtitle-details{
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .info-details{
+    font-size: .8rem;
+    overflow: scroll;
+  }
+
+  .danger-details{
+    font-size: .7rem;
+    padding: .5rem;
+    margin: .5rem 0;
+  }
+
+  .cont-button-details a{
+    margin-top: 1rem;
+    font-size: .8rem;
+  }
+
+/* PAGINA DE CONTACTO  */
+
+  .message{
+    font-size: .8rem;
+  }
+
+  .cont-form-contact{
+    padding: 0;
+  }
+
+  .section-one-contact{
+    padding: .8rem;
+  }
+
+  .title-ubi{
+    font-size: 1rem;
+  }
+
+  .cont-maps{
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  .title-maps{
+    font-size: .9rem;
+  }
 }
+
