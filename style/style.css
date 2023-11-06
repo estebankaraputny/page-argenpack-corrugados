@@ -1723,6 +1723,10 @@ main{
   padding: 2rem;
 }
 
+.card-notice{
+  margin-bottom: 2rem;
+}
+
 .cont-card-testi{
   align-items: center;
   justify-content: center;
