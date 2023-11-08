@@ -1488,7 +1488,7 @@ main{
   .cont-links{
     flex-direction: column-reverse;
     justify-content: center;
-    height: 70vh;
+    height: 100vh;
     width: 100%;
     background-color: var(--verde-argen);
     padding: 2rem;
@@ -1806,7 +1806,7 @@ main{
 
 /* 2- PANTALLAS DE CELULARES  */
 
-@media (max-width: 500px){
+@media (max-width: 450px){
 
 /* PAGINA DE INICIO  */
 
