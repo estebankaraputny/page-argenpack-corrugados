@@ -1542,10 +1542,8 @@ main{
 
 /* PÁGINA INICIO RESPONSIVE */
 
-  .cont-prod-muestra{
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  .cont-prod-muestra, .cont-boton-product{
+    display: none;
   }
 
   .cont-title-contact{
@@ -1844,9 +1842,6 @@ main{
     width: 100%;
   }
 
-  .cont-prod-muestra, .cont-boton-product{
-    display: none;
-  }
 
   .title-contact{
     font-size: 1.2rem;
