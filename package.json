@@ -1,0 +1,28 @@
+{
+  "name": "remasterizar-argenpack",
+  "version": "1.0.0",
+  "description": "first project with node.js",
+  "main": "index.js",
+  "scripts": {
+    "json:server": "json-server --watch db.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estebankaraputny/page-argenpack-corrugados.git"
+  },
+  "keywords": [
+    "first-project",
+    "argenpack",
+    "nodejs"
+  ],
+  "author": "Esteban Karaputny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/estebankaraputny/page-argenpack-corrugados/issues"
+  },
+  "homepage": "https://github.com/estebankaraputny/page-argenpack-corrugados#readme",
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}
