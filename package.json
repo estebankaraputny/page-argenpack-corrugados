@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "json-server": "^0.17.4"
+  },
+  "name": "remasterizar-argenpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "json:server": "json-server --watch db.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estebankaraputny/page-argenpack-corrugados.git"
+  },
+  "author": "Esteban Karaputny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/estebankaraputny/page-argenpack-corrugados/issues"
+  },
+  "homepage": "https://github.com/estebankaraputny/page-argenpack-corrugados#readme",
+  "description": ""
+}
