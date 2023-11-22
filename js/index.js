@@ -47,8 +47,12 @@ if(screen.width < 850){
 }
 
 
+// CONSUMIR FIREBASE 
+
+// import  firebase from `./firebase.js`;
 
 if( window.location.pathname === "/pages/product" || window.location.pathname === "/pages/product.html"){
+
 
     
     const getProductsServer = async () => {
@@ -217,3 +221,12 @@ const renderDetails = (data) => {
     renderDetails();
 
 }
+
+if (window.location.pathname === "/pages/contact" || window.location.pathname === "/pages/contact.html"){
+
+const buttonContact = document.querySelector("#buttonContact");
+
+buttonContact.addEventListener("click", (event) =>{
+    event.preventDefault();
+})
+};
