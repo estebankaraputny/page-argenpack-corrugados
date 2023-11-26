@@ -1635,7 +1635,6 @@ main{
   .cont-info-impact{
     flex-direction: column;
     padding: 0;
-    overflow: scroll;
   }
 
   .cont-info-impact div{
