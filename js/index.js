@@ -2,7 +2,7 @@
 const productsBox = [
     {
         titleBox: "Cajita de regalo",
-        descriptionBox: "Medidas: Altura: 30cm, Ancho: 50cm, Área: 1500cm2 Uso: Uso para contenidos variados, el cliente lo usará para pack de regalo para sus empleados. Material: Usamos un material resistente que permite carga máxima de 3kg. Para su tamaño es un resipiente ideal y práctico, no se me ocurre más nada porque no trabajo en Argenpack.",
+        descriptionBox: "Medidas: Altura: 30cm, Ancho: 50cm, Área: 1500cm2 Uso: Uso para contenidos variados, el cliente lo usará para pack de regalo para sus empleados. Material: Usamos un material resistente que permite carga máxima de 3kg. Para su tamaño es un resipiente ideal y práctico.",
         clientBox: "Macro",
         category: "Alta grafica",
         industria:"Financiera",
@@ -11,7 +11,7 @@ const productsBox = [
     },
     {
         titleBox: "Caja contenedor de autopartes",
-        descriptionBox: "Medidas: Altura: 30cm, Ancho: 50cm, Área: 1500cm2 Uso: Uso para contenidos variados, el cliente lo usará para pack de regalo para sus empleados. Material: Usamos un material resistente que permite carga máxima de 3kg. Para su tamaño es un resipiente ideal y práctico, no se me ocurre más nada porque no trabajo en Argenpack.",
+        descriptionBox: "Medidas: Altura: 30cm, Ancho: 50cm, Área: 1500cm2 Uso: Uso para contenidos variados, el cliente lo usará para pack de regalo para sus empleados. Material: Usamos un material resistente que permite carga máxima de 3kg. Para su tamaño es un resipiente ideal y práctico.",
         clientBox: "Toyota",
         category: "Grandes contenedores",
         industria:"Automotriz",
@@ -20,7 +20,7 @@ const productsBox = [
     },
     {
         titleBox: "Caja contenedor de liquidos industriales",
-        descriptionBox: "Medidas: Altura: 30cm, Ancho: 50cm, Área: 1500cm2 Uso: Uso para contenidos variados, el cliente lo usará para pack de regalo para sus empleados. Material: Usamos un material resistente que permite carga máxima de 3kg. Para su tamaño es un resipiente ideal y práctico, no se me ocurre más nada porque no trabajo en Argenpack.",
+        descriptionBox: "Medidas: Altura: 30cm, Ancho: 50cm, Área: 1500cm2 Uso: Uso para contenidos variados, el cliente lo usará para pack de regalo para sus empleados. Material: Usamos un material resistente que permite carga máxima de 3kg. Para su tamaño es un resipiente ideal y práctico.",
         clientBox: "Mirgor",
         category: "Envases especiales",
         industria:"Electrónica",
@@ -47,7 +47,7 @@ const productsBox = [
     },
     {
         titleBox: "Caja router Directv",
-        descriptionBox: "Medidas: Altura: 30cm, Ancho: 50cm, Área: 1500cm2 Uso: Uso para contenidos variados, el cliente lo usará para pack de regalo para sus empleados. Material: Usamos un material resistente que permite carga máxima de 3kg. Para su tamaño es un resipiente ideal y práctico, no se me ocurre más nada porque no trabajo en Argenpack.",
+        descriptionBox: "Medidas: Altura: 30cm, Ancho: 50cm, Área: 1500cm2 Uso: Uso para contenidos variados, el cliente lo usará para pack de regalo para sus empleados. Material: Usamos un material resistente que permite carga máxima de 3kg. Para su tamaño es un resipiente ideal y práctico.",
         clientBox: "Directv",
         category: "Envases industriales",
         industria:"Telecomunicaciones",
@@ -74,7 +74,7 @@ const productsBox = [
     },
     {
         titleBox: "Caja autopartes",
-        descriptionBox: "Medidas: Altura: 30cm, Ancho: 50cm, Área: 1500cm2 Uso: Uso para contenidos variados, el cliente lo usará para pack de regalo para sus empleados. Material: Usamos un material resistente que permite carga máxima de 3kg. Para su tamaño es un resipiente ideal y práctico, no se me ocurre más nada porque no trabajo en Argenpack.",
+        descriptionBox: "Medidas: Altura: 30cm, Ancho: 50cm, Área: 1500cm2 Uso: Uso para contenidos variados, el cliente lo usará para pack de regalo para sus empleados. Material: Usamos un material resistente que permite carga máxima de 3kg. Para su tamaño es un resipiente ideal y práctico.",
         clientBox: "Iveco",
         category: "Envases industriales",
         industria:"Automotriz",
